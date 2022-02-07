@@ -1,0 +1,114 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #ffffff;
+}
+
+.company-logo {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 31px;
+  letter-spacing: 0.03em;
+  color: #000000;
+}
+
+.header-contacts-list,
+.nav-header-list {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  color: #212121;
+}
+
+.company-logo:hover,
+.company-logo:focus,
+.nav-header-list:hover,
+.nav-header-list:focus,
+.header-contacts:hover,
+.header-contacts:focus,
+.header-contacts-list:hover,
+.header-contacts-list:focus,
+.order-button:focus {
+  color: #2196f3;
+}
+
+.hero-section {
+}
+
+.hero-section-header {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 60px;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #ffffff;
+  padding: 200px 450px 20px 450px;
+}
+
+.order-button {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 30px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: #ffffff;
+  margin: auto;
+}
+
+.hero-section {
+  background-color: #2f303a;
+  height: 600px;
+}
+
+/--Преимущества компании--/ .footer {
+  background-color: #2f303a;
+  height: 252px;
+}
+.footer-logo-section {
+  padding: 60px 0 20px 215px;
+}
+.footer-address-section {
+  padding: 0px 0 60px 215px;
+}
+.footer-logo {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 31px;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+}
+
+.footer-logo:hover,
+.footer-logo:focus {
+  color: #2196f3;
+}
+
+.footer-address {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+}
+.footer-contacts {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
