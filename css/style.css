@@ -1,18 +1,34 @@
+/* Основной фон #ffffff  */
+/* Вторичный фон #2f303a */
+/* Вторичный цвет текста #212121 */
+/* Основной цвет текста #757575 */
+/* Акцент #2196f3 */
+
+:root {
+  --primary-text-color: #757575;
+  --secondary-text-color: #212121;
+  --accent-color: #2196f3;
+  --button-primary-color: #f5f4fa;
+  --primary-bg-color: #ffffff;
+}
+
 body {
   font-family: 'Roboto', sans-serif;
-  background-color: #ffffff;
-  color: #212121;
+  font-style: normal;
+  background-color: var(--primary-bg-color);
+  color: var(--secondary-text-color);
 }
 .list {
   list-style: none;
 }
+.link {
+  text-decoration: none;
+}
+a {
+  text-decoration: none;
+}
 
-/* Основной фон #ffffff  */
-/* Вторичный фон ##2f303a */
-/* Вторичный цвет текста #2196f3 */
-/* Оснровной цвет текста #757575 */
-/* Акцент #f5f4fa */
-
+/*  Логотип компании */
 .company-logo {
   font-family: Raleway;
   font-style: normal;
@@ -22,17 +38,17 @@ body {
   letter-spacing: 0.03em;
   color: #000000;
 }
-
+/* Навигация и контакты шапки */
 .header-contacts-list,
 .nav-header-list {
-  font-style: normal;
   font-weight: 500;
   font-size: 14px;
   line-height: 16px;
   letter-spacing: 0.02em;
-  color: #212121;
+  color: var(--secondary-text-color);
 }
 
+/* Эффект ховер и фокус для ссылок */
 .company-logo:hover,
 .company-logo:focus,
 .nav-header-list:hover,
@@ -41,28 +57,45 @@ body {
 .header-contacts:focus,
 .header-contacts-list:hover,
 .header-contacts-list:focus,
-.order-button:focus {
-  color: #2196f3;
+.order-button:focus,
+.footer-logo:hover,
+.footer-logo:focus {
+  color: var(--accent-color);
 }
 
+/* Секция Герой */
 .hero-section {
+  background-color: #2f303a;
+  height: 600px;
 }
-
 .hero-section-header {
-  font-family: Roboto;
-  font-style: normal;
   font-weight: 900;
   font-size: 44px;
   line-height: 60px;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: #ffffff;
+  color: var(--primary-bg-color);
   padding: 200px 450px 20px 450px;
 }
 
-.order-button {
-  font-style: normal;
+/* Кнопака */
+.button {
+  color: var(--button-primary-color);
+}
+
+.button.primary {
+  background-color: var(--button-primary-color);
+  color: var(--secondary-text-color);
+}
+
+.button.primary:focus,
+.button.primary:hover {
+  background-color: var(--accent-color);
+  color: var(--primary-bg-color);
+}
+
+.order-button.secondary {
   font-weight: bold;
   font-size: 16px;
   line-height: 30px;
@@ -70,18 +103,13 @@ body {
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
-  color: #ffffff;
+  color: var(--primary-bg-color);
+  background-color: var(--accent-color);
   margin: auto;
 }
 
-.hero-section {
-  background-color: #2f303a;
-  height: 600px;
-}
-
 /* Преимущества компании */
-.company-advantages {
-  font-style: normal;
+.company-advantages .title {
   font-weight: bold;
   font-size: 14px;
   line-height: 16px;
@@ -90,14 +118,14 @@ body {
 }
 
 .company-advantages-item {
-  font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 24px;
   letter-spacing: 0.03em;
-  color: #757575;
+  color: var(--primary-text-color);
 }
 
+/* Наша команда  */
 .work-examples,
 .our-team-header {
   font-style: normal;
@@ -112,11 +140,10 @@ body {
 }
 
 .our-team-header-list {
-  background-color: #ffffff;
+  background-color: var(--primary-bg-color);
 }
 
 .our-team-name {
-  font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 19px;
@@ -124,14 +151,31 @@ body {
 }
 
 .our-team-job-position {
-  font-style: normal;
   font-weight: normal;
   font-size: 16px;
   line-height: 19px;
   letter-spacing: 0.03em;
-  color: #757575;
+  color: var(--primary-text-color);
 }
 
+/* Портфолио */
+.section-title {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 36px;
+  letter-spacing: 0.06em;
+  color: var(--secondary-text-color);
+}
+
+.section-article {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 0.03em;
+  color: var(--primary-text-color);
+}
+
+/* Подвал */
 .footer {
   background-color: #2f303a;
   height: 252px;
@@ -149,29 +193,17 @@ body {
   font-size: 26px;
   line-height: 31px;
   letter-spacing: 0.03em;
-  color: #ffffff;
-}
-
-.footer-logo:hover,
-.footer-logo:focus {
-  color: #2196f3;
+  color: var(--primary-bg-color);
 }
 
 .footer-address {
-  font-family: Roboto;
-  font-style: normal;
   font-weight: normal;
+  font-style: normal;
   font-size: 14px;
   line-height: 24px;
   letter-spacing: 0.03em;
-  color: #ffffff;
+  color: var(--primary-bg-color);
 }
 .footer-contacts {
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 24px;
-  letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
