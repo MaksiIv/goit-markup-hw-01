@@ -17,6 +17,7 @@ body {
   font-style: normal;
   background-color: var(--primary-bg-color);
   color: var(--secondary-text-color);
+  letter-spacing: 0.03em;
 }
 .list {
   list-style: none;
@@ -31,11 +32,9 @@ a {
 /*  Логотип компании */
 .company-logo {
   font-family: Raleway;
-  font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 26px;
-  line-height: 31px;
-  letter-spacing: 0.03em;
+  line-height: 1.19;
   color: #000000;
 }
 /* Навигация и контакты шапки */
@@ -43,9 +42,16 @@ a {
 .nav-header-list {
   font-weight: 500;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--secondary-text-color);
+}
+.accent {
+  color: var(--accent-color);
+}
+
+.nav-header .current {
+  color: var(--accent-color);
 }
 
 /* Эффект ховер и фокус для ссылок */
@@ -71,7 +77,7 @@ a {
 .hero-section-header {
   font-weight: 900;
   font-size: 44px;
-  line-height: 60px;
+  line-height: 1.36;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
@@ -96,9 +102,9 @@ a {
 }
 
 .order-button.secondary {
-  font-weight: bold;
+  font-weight: 700;
   font-size: 16px;
-  line-height: 30px;
+  line-height: 1.88;
   display: flex;
   align-items: center;
   text-align: center;
@@ -110,31 +116,27 @@ a {
 
 /* Преимущества компании */
 .company-advantages .title {
-  font-weight: bold;
+  font-weight: 700;
   font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 0.03em;
+  line-height: 1.14;
   text-transform: uppercase;
 }
 
 .company-advantages-item {
-  font-weight: normal;
   font-size: 14px;
-  line-height: 24px;
-  letter-spacing: 0.03em;
+  line-height: 1.71;
   color: var(--primary-text-color);
 }
 
-/* Наша команда  */
+/* Наша команда и примеры работ */
 .work-examples,
 .our-team-header {
-  font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 36px;
-  line-height: 42px;
+  line-height: 1.17;
   text-align: center;
-  letter-spacing: 0.03em;
 }
+
 .our-team {
   background: #f5f4fa;
 }
@@ -146,32 +148,28 @@ a {
 .our-team-name {
   font-weight: 500;
   font-size: 16px;
-  line-height: 19px;
-  letter-spacing: 0.03em;
+  line-height: 1.19;
 }
 
 .our-team-job-position {
-  font-weight: normal;
   font-size: 16px;
-  line-height: 19px;
+  line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
 }
 
 /* Портфолио */
 .section-title {
-  font-weight: bold;
+  font-weight: 700;
   font-size: 18px;
-  line-height: 36px;
+  line-height: 2;
   letter-spacing: 0.06em;
   color: var(--secondary-text-color);
 }
 
 .section-article {
-  font-weight: normal;
   font-size: 16px;
-  line-height: 30px;
-  letter-spacing: 0.03em;
+  line-height: 1.88;
   color: var(--primary-text-color);
 }
 
@@ -188,20 +186,16 @@ a {
 }
 .footer-logo {
   font-family: Raleway;
-  font-style: normal;
-  font-weight: bold;
+  font-weight: 700d;
   font-size: 26px;
-  line-height: 31px;
-  letter-spacing: 0.03em;
+  line-height: 1.19;
   color: var(--primary-bg-color);
 }
 
 .footer-address {
-  font-weight: normal;
-  font-style: normal;
+  font-style: inherit;
   font-size: 14px;
-  line-height: 24px;
-  letter-spacing: 0.03em;
+  line-height: 1.71;
   color: var(--primary-bg-color);
 }
 .footer-contacts {
